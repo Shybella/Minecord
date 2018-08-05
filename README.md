@@ -5,4 +5,4 @@ Commands:
 - !info <username> - return minecraft profile information
 - !status - returns Mojang service status
 ```
-Format: ![Alt Text](https://i.imgur.com/RwGMPvm.png)
+![Alt Text](https://i.imgur.com/RwGMPvm.png)
