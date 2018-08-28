@@ -12,7 +12,6 @@ namespace ConsoleApp2
         [Command("status")]
         public async Task STATUS_Async()
         {
-            //Honestly probably not smart doing this but whatever dude
             try
             {
                 ApiStatusResponse status = await new ApiStatus().PerformRequestAsync();
@@ -33,7 +32,7 @@ namespace ConsoleApp2
             catch (Exception ex)
             {
                 await ReplyAsync("Mojang API service is offline! Try again later.");
-                Console.WriteLine(ex); // Dump to console and log
+                Console.WriteLine(ex);
             }
         }
     }

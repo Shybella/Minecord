@@ -28,6 +28,13 @@ namespace ConsoleApp2
                 //If valid lets load the profile
                 ProfileResponse profile = new Profile(info.Uuid.Value, true).PerformRequestAsync().Result;
 
+                //just incase
+                if(!profile.IsSuccess)
+                {
+                    await ReplyAsync("Error has occured loading profile! Error: " + profile.Error.ErrorMessage);
+                }
+
+                //send the lookup
                 if (info.IsSuccess && profile.IsSuccess)
                 {
                     await ReplyAsync($"```UUID: {info.Uuid.Value}\r"
