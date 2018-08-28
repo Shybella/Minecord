@@ -12,7 +12,14 @@ namespace ConsoleApp2
         public async Task LOOKUP_Async(string minecraft_username)
         {
             try
-            {               
+            {          
+                //do not search usernames longer than 16 characters
+                if(minecraft_username.Length > 16)
+                {
+                    await ReplyAsync("Account not found");
+                    return;
+                }
+
                 UuidAtTimeResponse info = new UuidAtTime(minecraft_username, DateTime.Now).PerformRequestAsync().Result;
 
                 //make sure this is a valid account
