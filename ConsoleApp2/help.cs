@@ -20,11 +20,12 @@ namespace ConsoleApp2
             {
                 await ReplyAsync($"```"
                     + $"!info <username> - returns profile information. \r"
-                    + $"!status - returns Mojang service status.```\r");
+                    + $"!status - returns Mojang service status.\r"
+                    + $"!help - returns info related to help topic.```");
             }
             catch (Exception ex)
             {
-                Console.WriteLine(ex); //Dump to console and log :/
+                Console.WriteLine(ex);
             }
         }
     }

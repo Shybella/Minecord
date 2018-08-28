@@ -8,6 +8,8 @@
     <Authors>XXMINECRAFTGODXX</Authors>
     <Company>XXMINECRAFTGODXX</Company>
     <Description>Simple Minecraft status/profile tool.</Description>
+    <ApplicationIcon />
+    <StartupObject />
   </PropertyGroup>
 
   <ItemGroup>
