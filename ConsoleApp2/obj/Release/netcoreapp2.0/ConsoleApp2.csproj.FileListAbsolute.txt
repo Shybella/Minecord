@@ -8,3 +8,5 @@ C:\Users\Shyraq\source\repos\Minecord\ConsoleApp2\obj\Release\netcoreapp2.0\Cons
 C:\Users\Shyraq\source\repos\Minecord\ConsoleApp2\obj\Release\netcoreapp2.0\ConsoleApp2.AssemblyInfo.cs
 C:\Users\Shyraq\source\repos\Minecord\ConsoleApp2\obj\Release\netcoreapp2.0\Minecord.dll
 C:\Users\Shyraq\source\repos\Minecord\ConsoleApp2\obj\Release\netcoreapp2.0\Minecord.pdb
+C:\Users\Shyraq\source\repos\Minecord\ConsoleApp2\obj\Release\netcoreapp2.0\ConsoleApp2.csprojAssemblyReference.cache
+C:\Users\Shyraq\source\repos\Minecord\ConsoleApp2\bin\Release\netcoreapp2.0\Properties\launchSettings.json

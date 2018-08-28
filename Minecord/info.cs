@@ -4,7 +4,7 @@ using MojangSharp.Responses;
 using System;
 using System.Threading.Tasks;
 
-namespace ConsoleApp2
+namespace Minecord
 {
     public class info : ModuleBase<SocketCommandContext>
     {
