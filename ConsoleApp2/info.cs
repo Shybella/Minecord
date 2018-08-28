@@ -20,7 +20,7 @@ namespace ConsoleApp2
                 {
                     if (info.Error.ErrorMessage == "NotFound")
                     {
-                        await ReplyAsync("Account not found");
+                        await ReplyAsync("Account not founda");
                         return;
                     }
                 }
