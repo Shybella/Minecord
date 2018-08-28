@@ -19,7 +19,7 @@ namespace Minecord
             try
             {
                 await ReplyAsync($"```"
-                    + $"!info <username> - returns profile information. \r"
+                    + $"!lookup <username> - returns profile information. \r"
                     + $"!status - returns Mojang service status.\r"
                     + $"!help - returns info related to help topic.```");
             }
