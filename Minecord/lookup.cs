@@ -39,6 +39,7 @@ namespace Minecord
                 if(!profile.IsSuccess)
                 {
                     await ReplyAsync("Error has occured loading profile! Error: " + profile.Error.ErrorMessage);
+                    return;
                 }
 
                 //send the lookup
