@@ -24,7 +24,7 @@ namespace Minecord
                 }
                 else
                 {
-                    await ReplyAsync(servers.Error.ErrorMessage ?? servers.Error.Exception.Message);
+                    await ReplyAsync("Something went wrong! Error: " + servers.Error.ErrorMessage ?? servers.Error.Exception.Message);
                 }
             }
             catch (Exception ex)

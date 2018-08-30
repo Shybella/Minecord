@@ -8,15 +8,18 @@ namespace Minecord
 {
     public class lookup : ModuleBase<SocketCommandContext>
     {
+        private readonly CommandService _service;
+
         [Command("lookup"), Summary("Returns info about the minecraft user")]
         public async Task LOOKUP_Async(string minecraft_username)
         {
             try
-            { 
+            {
+                
                 //do not search usernames longer than 16 characters and less than 3 characters
                 if (minecraft_username.Length > 16 || minecraft_username.Length < 3)
                 {
-                    await ReplyAsync("Account not found!");
+                    await ReplyAsync("Error: Account not found!");
                     return;
                 }
 
@@ -27,7 +30,7 @@ namespace Minecord
                 {
                     if (info.Error.ErrorMessage == "NotFound")
                     {
-                        await ReplyAsync("Account not found!");
+                        await ReplyAsync("Error: Account not found!");
                         return;
                     }
                 }

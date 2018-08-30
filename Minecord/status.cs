@@ -25,7 +25,8 @@ namespace Minecord
                 }
                 else
                 {
-                    await ReplyAsync(status.Error.Exception == null ? status.Error.ErrorMessage : status.Error.Exception.Message);
+
+                    await ReplyAsync("Something went wrong! Error: " + status.Error.Exception == null ? status.Error.ErrorMessage : status.Error.Exception.Message);
                 }                 
             }
 
